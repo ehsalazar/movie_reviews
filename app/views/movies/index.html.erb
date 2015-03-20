@@ -1,0 +1,18 @@
+
+<div class="jumbotron">
+  <h1>Your Favorite Movies Reviewed</h1>
+  <p>A collection of favorite movie listings created by you and movie lovers like you. Find a movie you loved...or didn't, and leave a review for others to see!</p>
+  <p><%= link_to "Sign Up To Write A Review", class: "btn btn-primary btn-lg" %></p>
+</div>
+
+
+<div class="row">
+  <% @movies.each do |movie| %>
+    <div class="col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <%#= link_to (image_tag movie.image.url(:medium), class: 'image'), movie %>
+        <%= link_to movie.title, movie %>
+      </div>
+    </div>
+  <% end %>
+</div>
