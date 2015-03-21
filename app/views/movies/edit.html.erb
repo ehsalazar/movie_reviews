@@ -1,6 +1,16 @@
-<h1>Update Movie</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Back', @movie %> |
-<%= link_to 'All Movies', root_path %>
+<div class="col-md-6 col-md-offset-3">
+  <div class="row">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h1>Update Movie</h1>
+      </div>
+      <div class="panel-body">
+        <%= render 'form' %>
+      </div>
+      <div class="panel-footer">
+        <%= link_to 'Back', movies_path, class: "btn btn-default" %>
+        <%= link_to 'All Movies', root_path, class: "btn btn-default" %>
+      </div>
+    </div>
+  </div>
+</div>
