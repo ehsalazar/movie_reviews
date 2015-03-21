@@ -29,7 +29,7 @@
   </div><br>
   <div class="field">
     <%= f.label :rating %><br>
-    <%= f.text_field :rating %>
+    <%= f.select :rating, options_for_select([["G"], ["PG"], ["PG-13"], ["R"], ["NC-17"]]), {include_blank: '-- Select One --'}, :required => true %>
   </div><br>
   <div class="field">
     <%= f.label :image %><br>
